@@ -1,0 +1,39 @@
+body {
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.jumbotron {
+    color: white;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#feccb1+0,f17432+18,ea5507+61,fb955e+85 */
+    background: rgb(254,204,177); /* Old browsers */
+    background: -moz-linear-gradient(top, rgb(254,204,177) 0%, rgb(241,116,50) 18%, rgb(234,85,7) 61%, rgb(251,149,94) 85%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgb(254,204,177) 0%,rgb(241,116,50) 18%,rgb(234,85,7) 61%,rgb(251,149,94) 85%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgb(254,204,177) 0%,rgb(241,116,50) 18%,rgb(234,85,7) 61%,rgb(251,149,94) 85%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', endColorstr='#fb955e',GradientType=0 ); /* IE6-9 */
+}
+
+.rps {
+    width: 60px;
+    height: 60px;
+}
+
+.justify-content-between {
+    margin-bottom: 40px;
+}
+
+.justify-content-center {
+    margin-bottom: 40px;
+}
+
+.card-warning,
+.card-danger {
+    color: white;
+}
+
+.card-block {
+    background: white;
+}
