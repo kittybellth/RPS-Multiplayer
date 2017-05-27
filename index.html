@@ -27,13 +27,13 @@
                     <!-- Player 1-->
                     <div class="col-4">
                         <div class="card card-outline-danger">
-                            <div class="card-header card-danger">
-                                Player 1
+                            <div class="card-header card-danger player-one-div">
+                                <input type="text" class="player-one" placeholder="Player 1!" autofocus>
+                                <button type="button" class="btn btn-secondary btn-sm player-btn"
+                                id="player-one">Submit</button>
                             </div>
                             <div class="card-block">
-                                <blockquote class="card-blockquote">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                                <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                <blockquote class="card-blockquote text-center player-one-block">
                                 </blockquote>
                             </div>
                         </div>
@@ -42,13 +42,12 @@
                     <!--Score-->
                     <div class="col-4">
                         <div class="card card-outline-warning">
-                            <div class="card-header card-warning">
-                                Score
+                            <div class="card-header card-warning middle-div">
                             </div>
                             <div class="card-block">
-                                <blockquote class="card-blockquote">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                                <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                <blockquote class="card-blockquote text-center center-block">
+                                <!--<p class="first-p"></p>
+                                <p class="second-p"></p>-->
                                 </blockquote>
                             </div>
                         </div>
@@ -57,13 +56,14 @@
                     <!--Player 2-->
                     <div class="col-4">
                         <div class="card card-outline-danger">
-                            <div class="card-header card-danger">
-                                Player 2
+                            <div class="card-header card-danger player-two-div">
+                                <!--<span class="player-two-span"> Player 2</span>-->
+                                <input type="text" class="player-two" placeholder="Player 2!" autofocus>
+                                <button type="button" class="btn btn-secondary btn-sm player-btn"
+                                id="player-two">Submit</button>
                             </div>
                             <div class="card-block">
-                                <blockquote class="card-blockquote">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                                <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                <blockquote class="card-blockquote text-center player-two-block">
                                 </blockquote>
                             </div>
                         </div>
@@ -82,10 +82,7 @@
                                 --message--
                             </div>
                             <div class="card-block">
-                                <blockquote class="card-blockquote">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                <blockquote class="card-blockquote message-block">
                                 </blockquote>
                             </div>
                         </div>
@@ -100,14 +97,37 @@
                 <div class="row justify-content-center">
                     <div class="col-6">
                         <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Message...">
+                            <input type="text" class="form-control msg-form" placeholder="Message...">
                             <span class="input-group-btn">
-                                <button class="btn btn-secondary btn-danger" type="button">Send!</button>
+                                <button class="btn btn-secondary btn-danger" id="msg"
+                                type="button">Send!</button>
                             </span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel">Hi there!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/javascript/main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     </body>
 </html>

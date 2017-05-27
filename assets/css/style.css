@@ -37,3 +37,12 @@ body {
 .card-block {
     background: white;
 }
+
+.btn-sm {
+    margin-left: 5px;
+}
+
+.player-one-btn,
+.player-two-btn {
+    margin-bottom: 10px;
+}
